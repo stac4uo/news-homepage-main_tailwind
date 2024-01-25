@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>News homepage | stac4uo</title>
+  </head>
+
+  <body
+    class="text-projeckt w-[90vw] bg-Off-white mx-auto font-Inter relative max-w-screen-xl"
+  >
+    <div
+      id="blackmirrow"
+      class="mx-0 h-screen w-screen bg-black/30 absolute top-0 -left-20 translate-x-[120vw] transition ease-out duration-500 max-h-screen md:hidden"
+    ></div>
+    <!-- nałozenie czarnego tła na body przy kliknieciu na ikone menu  -->
+    <header
+      class="w-full flex flex-row justify-between items-center py-8 relative z-20"
+    >
+      <img class="h-[30px]" src="./images/logo.svg" alt="logo" />
+
+      <img
+        id="icon-menu"
+        class="h-[20px] md:hidden"
+        src="./images/icon-menu.svg"
+        alt=""
+      />
+      <nav
+        id="menuMobile"
+        class="bg-Off-white absolute top-0 -right-5 flex translate-x-[75vw] overflow-hidden md:translate-x-0 md:relative"
+      >
+        <ul
+          class="h-screen w-[70vw] flex flex-col text-lg md:flex-row md:w-auto md:h-full md:text-grayishBlue md:text-sm
+          "
+        >
+          <img
+            id="closeIcon"
+            src="./images/icon-menu-close.svg"
+            alt=""
+            class="self-end mr-8 mt-8 h-[30px] w-[30px] md:hidden"
+          />
+          <li
+            class=" py-2 px-4 hover:text-redSoft transition-colors cursor-pointer"
+          >
+            Home
+          </li>
+          <li
+            class=" py-2 px-4 hover:text-redSoft transition-colors cursor-pointer"
+          >
+            New
+          </li>
+          <li
+            class=" py-2 px-4 hover:text-redSoft transition-colors cursor-pointer"
+          >
+            Popular
+          </li>
+          <li
+            class=" py-2 px-4 hover:text-redSoft transition-colors cursor-pointer"
+          >
+            Trending
+          </li>
+          <li
+            class=" py-2 px-4 hover:text-redSoft transition-colors cursor-pointer"
+          >
+            Categories
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="md:flex md:justify-between  gap-10">
+      <main class="mb-10 md:flex md:flex-col gap-5">
+        <img src="./images/image-web-3-mobile.jpg" alt="" class="md:hidden" />
+        <img
+          src="./images/image-web-3-desktop.jpg"
+          alt=""
+          class="hidden md:block"
+        />
+        <div class="py-5 flex flex-col items-start md:flex-row md:gap-10">
+          <h1
+            class="text-4xl font-extrabold pb-5 lg:text-6xl md:h-full md:pb-0"
+          >
+            The Bright <br class="md:hidden" />
+            Future of Web <br class="md:hidden" />
+            3.0?
+          </h1>
+          <div
+            class="md:flex md:flex-col md:justify-between md:gap-5 md:h-full"
+          >
+            <p class="text-grayishBlue pb-5 md:leading-relaxed">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button
+              class="text-sm px-8 py-3 bg-redSoft hover:bg-veryDarkBlue transition-colors text-Off-white font-semibold uppercase tracking-[.20em] md:w-[55%] lg:w-[50%]"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <section class="bg-veryDarkBlue text-Off-white mb-10 h-auto">
+        <h2 class="text-2xl font-semibold text-orangeSoft p-4">New</h2>
+
+        <div class="flex flex-col justify-around">
+          <div class="pl-4 pt-2 w-[95%] self-start">
+            <h3
+              class="text-lg mb-2 font-semibold hover:text-orangeSoft transition-colors"
+            >
+              Hydrogen VS Electric Cars
+            </h3>
+            <p class="pb-4 text-grayishBlue">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+            <div class="h-[1px] bg-grayishBlue mt-4"></div>
+          </div>
+
+          <div class="pl-4 pt-6 w-[95%] self-start">
+            <h3
+              class="text-lg mb-2 font-semibold hover:text-orangeSoft transition-colors"
+            >
+              The Downsides of AI Artistry
+            </h3>
+            <p class="pb-4 text-grayishBlue">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+            <div class="h-[1px] bg-grayishBlue mt-4"></div>
+          </div>
+
+          <div class="pl-4 pt-6 w-[95%] self-start mb-4">
+            <h3
+              class="text-lg mb-2 font-semibold hover:text-orangeSoft transition-colors"
+            >
+              Is VC Funding Drying Up?
+            </h3>
+            <p class="pb-4 text-grayishBlue">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section
+      class="w-full flex flex-col justify-between gap-8 md:flex-row md:mt-10"
+    >
+      <div class="h-[127px] flex gap-4">
+        <img
+          src="./images/image-retro-pcs.jpg"
+          alt="retro PC"
+          class="w-[100px]"
+        />
+        <div class="h-[127px] flex flex-col justify-around">
+          <h2 class="text-3xl text-grayishBlue font-extrabold">01</h2>
+
+          <h3 class="text-xl font-bold hover:text-redSoft transition-colors">
+            Reviving Retro PCs
+          </h3>
+          <p class="text-grayishBlue">
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </div>
+
+      <div class="h-[127px] flex gap-4">
+        <img
+          src="./images/image-top-laptops.jpg"
+          alt="retro PC"
+          class="w-[100px]"
+        />
+
+        <div class="h-[127px] flex flex-col justify-around">
+          <h2 class="text-3xl text-grayishBlue font-extrabold">02</h2>
+
+          <h3 class="text-xl font-bold hover:text-redSoft transition-colors">
+            Top 10 Laptops of 2022
+          </h3>
+          <p class="text-grayishBlue">
+            Our best picks for various needs and budgets.
+          </p>
+        </div>
+      </div>
+
+      <div class="h-[127px] flex gap-4">
+        <img
+          src="./images/image-gaming-growth.jpg"
+          alt="retro PC"
+          class="w-[100px]"
+        />
+        <div class="h-[127px] flex flex-col justify-around">
+          <h2 class="text-3xl text-grayishBlue font-extrabold">03</h2>
+
+          <h3 class="text-xl font-bold hover:text-redSoft transition-colors">
+            The Growth of Gaming
+          </h3>
+          <p class="text-grayishBlue">
+            How the pandemic has sparked fresh opportunities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution mt-16">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">stac4uo</a>.
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
